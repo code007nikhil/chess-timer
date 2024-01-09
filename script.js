@@ -125,7 +125,7 @@ let intervalB;
 var flag = false;
 start.addEventListener("click",()=>{   
  if (flag == false) {
-    intervalA = setInterval(timeAUpdate,100)
+    intervalA = setInterval(timeAUpdate,1000)
     flag = true;
     res = false;
  }
@@ -136,10 +136,10 @@ window.addEventListener("keypress",(e)=>{
     if (e.code == "Space" && flag == true) {
         if (space == 1) {
             clearInterval(intervalA);
-            intervalB = setInterval(timeBUpdate,100)
+            intervalB = setInterval(timeBUpdate,1000)
             space = 0;
         } else if (space == 0 && flag == true) {
-            intervalA = setInterval(timeAUpdate,100)
+            intervalA = setInterval(timeAUpdate,1000)
             clearInterval(intervalB);
             space = 1;
         }
