@@ -1,0 +1,289 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html , body{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    background: rgb(26, 25, 25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container1{
+    width: 70%;
+    height: 80%;
+    background: rgba(0, 0, 0, 0.74);
+    border-radius: 12px;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0px 0px 100px rgba(255, 217, 0, 0.712);
+
+}
+.container1 .left{
+    width: 50%;
+    height: 100%;
+    background-image: url("https://images.unsplash.com/photo-1594730686687-c00dd7efcb6b?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNoZXNzfGVufDB8fDB8fHww");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container1 .left h1{
+    color: rgb(255, 255, 255);
+    font-size: 3.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container1 .right{
+    width: 50%;
+    height: 100%;
+    background: rgba(44, 43, 43, 0.979);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 0px;
+}
+.right input{
+    width: 80%;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.089);
+    border: none;
+    outline: none;
+    padding: 0px 20px;
+    font-size: 1.3rem;
+    border-radius: 8px;
+    color: white;
+}
+
+select{
+    width: 80%;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.089);
+    border: none;
+    outline: none;
+    padding: 0px 20px;
+    font-size: 1.3rem;
+    border-radius: 8px;
+    color: white;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}  
+option{
+    color: black;
+}
+.right button{
+    width: 80%;
+    height: 60px;
+    font-size: 1.3rem;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+
+}
+
+.container2{
+    width: 70%;
+    height: 85%;
+    background: rgba(0, 0, 0, 0.103);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0px 0px 100px rgba(255, 217, 0, 0.712);
+    display: none;
+}
+.container2 .players{
+    height: 10%;
+    width: 100%;
+    background: rgba(19, 18, 18, 0.13);
+    display: flex;
+}
+.player{
+    color: gold;
+    width: 50%;
+    height: 100%;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    border: 1px solid rgba(209, 164, 17, 0.336);
+    font-size: 1.7rem;
+   
+}
+.player:nth-child(1){
+    border-top-left-radius: 12px;
+}
+.player:nth-child(2){
+    border-top-right-radius: 12px;
+
+}
+.container2 .timer{
+    width: 100%;
+    height: 65%;
+    background: rgba(255, 255, 255, 0.5);
+    display: flex;
+    color: white;
+}
+.container2 .timer .left{
+width: 50%;
+height: 100%;
+background: rgb(30, 30, 31);
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 3.5rem;
+border: 1px solid rgb(0, 0, 0);
+border-right: 1px solid rgba(255, 255, 255, 0.562);
+position: relative;
+
+}
+.container2 .timer .right{
+width: 50%;
+height: 100%;
+background: rgb(30, 30, 31);
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 3.5rem;
+border: 1px solid rgb(0, 0, 0);
+border-left: 1px solid rgba(255, 255, 255, 0.041);
+position: relative;
+
+
+}
+.reset{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.reset button{
+    width: 40%;
+    padding: 20px 0;
+    outline: none;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.3rem;
+    color: white;
+    background: rgba(0, 0, 0, 0.144);
+    box-shadow: 0px 0px 5px white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.reset button:hover{
+    background: white;
+    color: rgb(0, 0, 0);
+}
+.info{
+    width: 100%;
+    background: rgba(255, 255, 255, 0.705);
+    height: 5%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: large;
+}
+
+.over{
+    position: absolute;
+    background: rgb(37, 37, 37);
+    display: none;
+    width: 100%;
+    height: 100%;
+    padding: 20% 0;
+}
+.over h1{
+    font-size: 5rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.959);
+}
+
+
+/* media quiries  */
+
+@media screen and (max-width : 500px) {
+    .container1{
+        width: 80%;
+        height: 80%;  
+        flex-direction: column;
+    }
+    .container1 .left{
+        width: 100%;
+        height: 50%;
+    }
+    .container1 .left h1{
+        color: rgb(255, 255, 255);
+        font-size: 2rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .container1 .right{
+        width: 100%;
+        height: 50%;
+    }
+    .right input{
+        width: 80%;
+        padding: 10px 20px;
+        font-size: 1.3rem;
+    }
+    
+    select{
+        width: 80%;
+        padding: 10px 20px;
+        font-size: 1.3rem;
+    }
+    .right button{
+        width: 80%;
+        padding: 10px 20px;
+        font-size: 1.1rem;
+    }
+
+
+    /* container 2  */
+
+    .container2{
+        width: 90%;
+        height: 70%;
+    }
+    .player{
+        font-size: 1.3rem;
+       
+    }
+    .container2 .timer{
+        width: 100%;
+        height: 60%;
+    }
+    .container2 .timer .left{
+    font-size: 1.6rem;
+    }
+    .container2 .timer .right{
+        font-size: 1.6rem;
+    }
+    .reset button{
+        width: 35%;
+        padding: 20px 10px;
+    }
+    .info{
+        font-size: 1.1rem;
+        height: 10%;
+    }
+    .over h1{
+        font-size: 1.2rem;
+    }
+
+}

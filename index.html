@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="container1">
+            <div class="left">
+                <h1>CHESS TIMER</h1>
+            </div>
+            <div class="right">
+                <input class="name1" type="text" placeholder="PLAYER 1">
+                <input class="name2" type="text" placeholder="PLAYER 2">
+                <select name="time" id="timeInMinutes">
+                    <option value="">TIME</option>
+                    <option value="10">10 minutes</option>
+                    <option value="5">5 minutes</option>
+                    <option value="15">15 minutes</option>
+                    <option value="20">20 minutes</option>
+                </select>
+                <button class="start">START</button>
+            </div>
+        </div>
+        <div class="container2">
+            <div class="players">
+                <div class="player">
+                    <p  id="playerA"></p>
+                </div>
+                <div class="player">
+                    <p id="playerB"></p>
+                </div>
+            </div>
+            <div class="timer">
+                <div class="left">
+                    <div class="over " id="over-left"><h1>Time over</h1></div>
+                    <h1 class="left-time"> <span class="minA"></span>:<span class="secA">00</span> </h1>
+                </div>
+                <div class="right">
+                    <div class="over " id="over-right"><h1>Time over</h1></div>
+                    <h1 class="right-time"> <span class="minB"></span>:<span class="secB">00</span> </h1>
+                </div>              
+            </div>
+            <div class="reset">
+                <button id="startbtn">START</button>
+                <button id="resetbtn">RESET</button>
+            </div>
+            <div class="info">
+                <p>Use spacebar to switch turn !</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
